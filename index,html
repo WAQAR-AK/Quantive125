@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your AI Form Builder</title>
+    <base href="/">
+    <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
+    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap)" rel="stylesheet">
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css)">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="smooth-scroll">
+
+    <header class="bg-[#1E2A38] shadow-md py-6 fixed top-0 left-0 right-0 z-50">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-white">
+                YourAIForms
+            </div>
+
+            <nav class="hidden md:flex space-x-6">
+                <a href="#features" class="text-gray-300 hover:text-white transition duration-300">Features</a>
+                <a href="#use-cases" class="text-gray-300 hover:text-white transition duration-300">Use Cases</a>
+                <div class="relative dropdown">
+                    <button class="text-gray-300 hover:text-white transition duration-300 focus:outline-none">
+                        Resources <i class="fas fa-chevron-down text-xs ml-1"></i>
+                    </button>
+                    <div class="dropdown-menu absolute z-10 bg-white shadow-lg rounded-md mt-2 py-2 w-40">
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Blog</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Documentation</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Support</a>
+                    </div>
+                </div>
+                <a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a>
+            </nav>
+
+            <div class="space-x-4">
+                <button class="px-4 py-2 border border-white text-white rounded-md hover:bg-white hover:text-[#1E2A38] transition duration-300">Login</button>
+                <button class="px-4 py-2 bg-yellow-400 text-gray-900 rounded-md hover:bg-yellow-500 transition duration-300 shadow-lg">Sign Up</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-bg flex flex-col md:flex-row items-center justify-center pt-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-5/12 text-center md:text-left mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">
+                    Build Smarter Forms,<br>Analyze Responses with AI
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 opacity-90">
+                    Generate questions, get insights, and find the best fit.
+                </p>
+                <div class="text-center md:text-left">
+                     <a href="#form-section" class="inline-block bg-green-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-green-600 transition duration-300 shadow-xl">
+                        Start Here
+                    </a>
+                </div>
+            </div>
+
+            <div class="md:w-5/12 flex justify-center md:justify-end">
+                <img src="[https://cdn.glitch.global/08eadef3-cfe8-4477-be51-7a895f69f25e/image.png?v=1746912971939](https://cdn.glitch.global/08eadef3-cfe8-4477-be51-7a895f69f25e/image.png?v=1746912971939)" alt="AI Form Illustration" class="max-w-full h-auto rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12">Powerful AI Features</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-lg shadow-lg bg-gray-50">
+                    <div class="text-4xl text-indigo-600 mb-4"><i class="fas fa-robot"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3">AI Question Generator</h3>
+                    <p class="text-gray-600">Let AI suggest relevant questions based on your form's topic and key parameters, saving you time and effort.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg bg-gray-50">
+                    <div class="text-4xl text-green-600 mb-4"><i class="fas fa-chart-bar"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Intelligent Response Analysis</h3>
+                    <p class="text-gray-600">Get AI-powered insights into individual responses, helping you quickly assess suitability, especially for applications.</p>
+                </div>
+                <div class="p-6 rounded-lg shadow-lg bg-gray-50">
+                    <div class="text-4xl text-purple-600 mb-4"><i class="fas fa-users"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Smart Candidate Comparison</h3>
+                    <p class="text-gray-600">Compare multiple candidates side-by-side with AI assistance, filtering based on your specific criteria to find the best fit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="use-cases" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-12">Versatile Applications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 rounded-lg shadow-lg bg-white">
+                     <div class="text-4xl text-blue-600 mb-4"><i class="fas fa-building"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3">HR & Hiring</h3>
+                    <p class="text-gray-600">Streamline application screening and candidate assessment.</p>
+                </div>
+                 <div class="p-6 rounded-lg shadow-lg bg-white">
+                     <div class="text-4xl text-red-600 mb-4"><i class="fas fa-graduation-cap"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Education</h3>
+                    <p class="text-gray-600">Create smart quizzes, applications, and feedback forms.</p>
+                </div>
+                 <div class="p-6 rounded-lg shadow-lg bg-white">
+                     <div class="text-4xl text-yellow-600 mb-4"><i class="fas fa-comments"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3">Feedback & Surveys</h3>
+                    <p class="text-gray-600">Gather insightful feedback with intelligently designed questions.</p>
+                </div>
+                 <div class="p-6 rounded-lg shadow-lg bg-white">
+                     <div class="text-4xl text-teal-600 mb-4"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3 class="text-xl font-semibold text-gray-700 mb-3">General Applications</h3>
+                    <p class="text-gray-600">Use AI for any form where intelligent question generation is helpful.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="form-section" class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <div class="form-container">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Create Your Form</h2>
+
+                <div class="mb-6">
+                    <label for="form-title" class="block text-gray-700 text-sm font-bold mb-2">Form Title:</label>
+                    <input type="text" id="form-title" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="e.g., Software Engineer Application">
+                </div>
+
+                <div class="mb-6">
+                    <label for="special-instructions" class="block text-gray-700 text-sm font-bold mb-2">Special Instructions for AI:</label>
+                    <textarea id="special-instructions" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="e.g., Focus on candidates with 5+ years of experience in React. Generate 10 questions."></textarea>
+                </div>
+
+                <div class="mb-6">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="text-xl font-bold text-gray-800">AI Suggestions</h3>
+                        <button id="select-parameters-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300">
+                            Select Parameters
+                        </button>
+                         <button id="generate-questions-btn" class="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300 ml-2">
+                             Generate Questions
+                         </button>
+                    </div>
+                    <div id="ai-suggested-questions" class="bg-gray-100 p-4 rounded-md border border-gray-300 min-h-[100px] text-gray-600 italic">
+                        AI suggested questions will appear here after you provide a title and instructions and click 'Generate Questions'.
+                        </div>
+                </div>
+
+                <div class="mb-6">
+                     <h3 class="text-xl font-bold text-gray-800 mb-4">Your Form Questions</h3>
+                     <div id="manual-questions-area" class="bg-gray-100 p-4 rounded-md border border-gray-300 min-h-[150px]">
+                         <p id="no-questions-placeholder" class="text-gray-600 italic">Add your first question below.</p>
+                     </div>
+                     <button id="add-question-btn" class="mt-4 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300">
+                         Add Question Manually
+                     </button>
+                 </div>
+
+                <div id="form-action-buttons" class="text-center mt-8 space-x-4">
+                    <button id="preview-form-btn" class="bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-md text-lg focus:outline-none focus:shadow-outline transition duration-300 shadow-lg">
+                        Preview Form
+                    </button>
+                    <button id="publish-form-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-md text-lg focus:outline-none focus:shadow-outline transition duration-300 shadow-lg">
+                        Confirm And Publish Form
+                    </button>
+                </div>
+
+                 <div id="published-form-links" class="text-center mt-8 space-x-4 hidden">
+                     <a href="#" id="responses-link-btn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-md text-lg focus:outline-none focus:shadow-outline transition duration-300 shadow-lg inline-block">
+                         Responses
+                     </a>
+                     <div class="relative inline-block">
+                         <button id="responders-link-copy-btn" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-l-md text-lg focus:outline-none focus:shadow-outline transition duration-300 shadow-lg">
+                             Copy Responder Link
+                         </button>
+                         <button id="responders-link-open-btn" class="bg-purple-700 hover:bg-purple-800 text-white font-bold py-3 px-4 rounded-r-md text-lg focus:outline-none focus:shadow-outline transition duration-300 shadow-lg border-l border-purple-500">
+                             <i class="fas fa-external-link-alt"></i>
+                         </button>
+                     </div>
+                     <p id="copy-feedback" class="text-green-600 mt-2 hidden">Link copied!</p>
+                 </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+                <span class="text-gray-500">|</span>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Terms of Service</a>
+                <span class="text-gray-500">|</span>
+                <a href="#contact" class="text-gray-400 hover:text-white mx-2">Contact Us</a>
+            </div>
+            <p>&copy; 2023 YourAIForms. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="parameter-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <span class="modal-close-button" id="close-modal">&times;</span>
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Set AI Priorities</h3>
+
+            <div id="parameter-list">
+                <div class="parameter-item">
+                    <label><input type="checkbox" class="mr-2 parameter-checkbox" data-parameter-name="Educational Qualification"> Educational Qualification</label>
+                    <input type="number" class="parameter-percentage" value="0" min="0" max="100"> %
+                </div>
+                 <div class="parameter-item">
+                    <label><input type="checkbox" class="mr-2 parameter-checkbox" data-parameter-name="Work Experience"> Work Experience</label>
+                    <input type="number" class="parameter-percentage" value="0" min="0" max="100"> %
+                </div>
+                 <div class="parameter-item">
+                    <label><input type="checkbox" class="mr-2 parameter-checkbox" data-parameter-name="Communication Skill"> Communication Skill</label>
+                    <input type="number" class="parameter-percentage" value="0" min="0" max="100"> %
+                </div>
+                 <div class="parameter-item">
+                    <label><input type="checkbox" class="mr-2 parameter-checkbox" data-parameter-name="Culture Fit"> Culture Fit</label>
+                    <input type="number" class="parameter-percentage" value="0" min="0" max="100"> %
+                </div>
+                </div>
+
+             <div class="mt-6 pt-4 border-t border-gray-200">
+                <h4 class="text-lg font-semibold mb-3">Add Custom Parameter</h4>
+                <div class="flex">
+                    <input type="text" id="custom-parameter-name" class="shadow appearance-none border rounded-l w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="e.g., Problem Solving">
+                    <button id="add-custom-parameter-btn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-r focus:outline-none focus:shadow-outline transition duration-300">
+                        Add
+                    </button>
+                </div>
+                <div id="custom-parameter-list" class="mt-3">
+                    </div>
+            </div>
+
+
+            <div class="mt-6 text-right">
+                <p class="text-sm text-gray-700 mb-2">Total Percentage: <span id="total-percentage" class="font-bold">0</span>%</p>
+                <button id="save-parameters-btn" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline transition duration-300">
+                    Save Parameters
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="preview-modal" class="modal-overlay hidden">
+        <div class="modal-content max-w-xl w-11/12"> <span class="modal-close-button" id="close-preview-modal">&times;</span>
+            <div id="form-preview-content">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Form Preview</h3>
+                <div id="preview-form-title" class="text-xl font-bold mb-4"></div>
+                <div id="preview-form-description" class="text-gray-700 mb-6"></div>
+                <div id="preview-form-questions">
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="[https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js](https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js)"></script>
+    <script src="[https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js](https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js)"></script>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
